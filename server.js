@@ -37,7 +37,7 @@ app.post('/api/animals', (req, res) => {
       // rewrite file
       fs.writeFile('./animals.json', dataToSave, err => {
         if (err) throw err
-        res.status(200).send('All good!')
+        res.status(200).send('Animal saved!')
       })
     })
   } else {
